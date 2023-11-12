@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="robot">
-        <div class="hat">
-
+        <div class="head-top">
+          <div class='antenna js-antenna'></div>
+          <div class="hat js-button"></div>
+          <div class='antenna js-antenna'></div>
         </div>
         <div class="head">
             <div class="ear left"></div>
@@ -30,7 +32,7 @@
         </div>
         <div class="neck"></div>
         <div class="body">
-            <div class="arm">
+            <div class="arm left">
                 <div class="arm__shoulder"></div>
                 <div class="arm__upper-arm"></div>
                 <div class="arm__forearm"></div>
@@ -39,9 +41,12 @@
                 </div>
             </div>
             <div class="chest">
-
-                <div class="chest__display">
-                    Hello world!
+                <div class="chest__display js-display">
+                    click the button
+                </div>
+                <div class="chest__indicator">
+                  <input type="range" min=1 value=3 max=10 class='js-speed-range speed-range'>
+                  <p class='js-speed-indicator'>3</p>
                 </div>
             </div>
             <div class="arm right">
